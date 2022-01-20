@@ -1,0 +1,58 @@
+version: "3.7"
+services:
+  web-server:
+    build:
+      dockerfile: php.Dockerfile
+      context: .
+    restart: always
+    volumes:
+      - "./html/:/var/www/html/"
+    ports:
+      - "8080:80"
+  mysql-server:
+    image: mysql:5.7.36
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: noconsole
+      MYSQL_USER: nocuser
+      MYSQL_PASSWORD: n0cus3r
+    volumes:
+      - mysql-data:/var/lib/mysql
+    storage_opt:
+      size: '10G'
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.0.1
+    restart: always
+    environment:
+      PMA_HOST: mysql-server
+      PMA_USER: root
+      PMA_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: noconsole
+      MYSQL_USER: nocuser
+      MYSQL_PASSWORD: n0cus3r
+      UPLOAD_LIMIT: 128M
+    ports:
+      - "5000:80"
+  openldap:
+    build: 
+      dockerfile: ldap.Dockerfile
+    restart: always
+    # image: bitnami/openldap:latest
+    ports:
+      - '1389:1389'
+      - '1636:1636'
+    # environment:
+    #   - LDAP_ROOT=ou=NTTI,dc=NTTAPAC,dc=COM
+    #   - LDAP_CUSTOM_LDIF_DIR=output.ldif
+    #   - LDAP_ADMIN_USERNAME=admin
+    #   - LDAP_ADMIN_PASSWORD=adminpassword
+    #   - LDAP_USERS=user01,user02
+    #   - LDAP_PASSWORDS=password1,password2
+    volumes:
+      - 'openldap_data:/bitnami/openldap'
+volumes:
+  mysql-data:
+  openldap_data:
+    

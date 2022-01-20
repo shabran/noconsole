@@ -1,0 +1,623 @@
+version: 1
+
+dn: ou=NOC, dc=NTTI, dc=COM
+changetype: add
+ou: NOC
+objectClass: top
+objectClass: organizationalUnit
+
+dn: cn=Giang Firat,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Giang Firat
+sn: Firat
+sAMAccountName: FiratG
+description: This is Giang Firat's description
+facsimileTelephoneNumber: +1 null 634-7454
+l: Cambridge
+ou: null
+postalAddress: null$Cambridge
+telephoneNumber: +1 null 600-9413
+title: Supervisor null null
+userPassword: Password1
+uid: FiratG
+givenName: Giang
+mail: FiratG@ns-mail3.com
+carLicense: 2IJBH9
+departmentNumber: 5735
+employeeType: Contract
+homePhone: +1 null 603-7557
+initials: G. F.
+mobile: +1 null 699-5916
+pager: +1 null 831-1516
+roomNumber: 8016 
+
+dn: cn=Sonni Debnam,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Sonni Debnam
+sn: Debnam
+sAMAccountName: DebnamS
+description: This is Sonni Debnam's description
+facsimileTelephoneNumber: +1 null 992-4065
+l: Palo Alto
+ou: null
+postalAddress: null$Palo Alto
+telephoneNumber: +1 null 508-1114
+title: Supervisor null null
+userPassword: Password1
+uid: DebnamS
+givenName: Sonni
+mail: DebnamS@ns-mail2.com
+carLicense: VB5L4V
+departmentNumber: 4559
+employeeType: Contract
+homePhone: +1 null 607-2616
+initials: S. D.
+mobile: +1 null 897-5022
+pager: +1 null 162-9343
+roomNumber: 9064
+manager: cn=Giang Firat,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Svr English,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Svr English
+sn: English
+sAMAccountName: EnglishS
+description: This is Svr English's description
+facsimileTelephoneNumber: +1 null 857-4740
+l: Santa Clara
+ou: null
+postalAddress: null$Santa Clara
+telephoneNumber: +1 null 526-8699
+title: Supervisor null null
+userPassword: Password1
+uid: EnglishS
+givenName: Svr
+mail: EnglishS@ns-mail6.com
+carLicense: 6FD432
+departmentNumber: 9603
+employeeType: Contract
+homePhone: +1 null 135-4618
+initials: S. E.
+mobile: +1 null 256-2054
+pager: +1 null 932-7866
+roomNumber: 8828
+secretary: cn=Sonni Debnam,ou=null,dc=NTTI, dc=COM
+manager: cn=Giang Firat,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Willyt Soard,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Willyt Soard
+sn: Soard
+sAMAccountName: SoardW
+description: This is Willyt Soard's description
+facsimileTelephoneNumber: +1 null 293-8443
+l: Santa Clara
+ou: null
+postalAddress: null$Santa Clara
+telephoneNumber: +1 null 323-9185
+title: Supervisor null null
+userPassword: Password1
+uid: SoardW
+givenName: Willyt
+mail: SoardW@ns-mail6.com
+carLicense: Q1977W
+departmentNumber: 4531
+employeeType: Contract
+homePhone: +1 null 464-6289
+initials: W. S.
+mobile: +1 null 952-9203
+pager: +1 null 595-3173
+roomNumber: 8976
+secretary: cn=Sonni Debnam,ou=null,dc=NTTI, dc=COM
+manager: cn=Giang Firat,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Idalia Tookey,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Idalia Tookey
+sn: Tookey
+sAMAccountName: TookeyI
+description: This is Idalia Tookey's description
+facsimileTelephoneNumber: +1 null 493-5230
+l: San Francisco
+ou: null
+postalAddress: null$San Francisco
+telephoneNumber: +1 null 784-9595
+title: Supervisor null null
+userPassword: Password1
+uid: TookeyI
+givenName: Idalia
+mail: TookeyI@ns-mail3.com
+carLicense: SQ6LEW
+departmentNumber: 2886
+employeeType: Contract
+homePhone: +1 null 138-7294
+initials: I. T.
+mobile: +1 null 710-7093
+pager: +1 null 448-6345
+roomNumber: 9880
+secretary: cn=Sonni Debnam,ou=null,dc=NTTI, dc=COM
+manager: cn=Willyt Soard,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Janos Wyss,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Janos Wyss
+sn: Wyss
+sAMAccountName: WyssJ
+description: This is Janos Wyss's description
+facsimileTelephoneNumber: +1 null 440-5221
+l: San Jose
+ou: null
+postalAddress: null$San Jose
+telephoneNumber: +1 null 194-3017
+title: Supervisor null null
+userPassword: Password1
+uid: WyssJ
+givenName: Janos
+mail: WyssJ@ns-mail8.com
+carLicense: 0W2WLT
+departmentNumber: 9787
+employeeType: Contract
+homePhone: +1 null 342-1199
+initials: J. W.
+mobile: +1 null 382-7071
+pager: +1 null 693-6341
+roomNumber: 9598
+secretary: cn=Idalia Tookey,ou=null,dc=NTTI, dc=COM
+manager: cn=Willyt Soard,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Ealasaid Older,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Ealasaid Older
+sn: Older
+sAMAccountName: OlderE
+description: This is Ealasaid Older's description
+facsimileTelephoneNumber: +1 null 952-9568
+l: Menlo Park
+ou: null
+postalAddress: null$Menlo Park
+telephoneNumber: +1 null 504-9075
+title: Supervisor null null
+userPassword: Password1
+uid: OlderE
+givenName: Ealasaid
+mail: OlderE@ns-mail9.com
+carLicense: BK7JHI
+departmentNumber: 8357
+employeeType: Contract
+homePhone: +1 null 598-3160
+initials: E. O.
+mobile: +1 null 418-7271
+pager: +1 null 801-5544
+roomNumber: 8993
+secretary: cn=Idalia Tookey,ou=null,dc=NTTI, dc=COM
+manager: cn=Giang Firat,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Suzanna Decleir,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Suzanna Decleir
+sn: Decleir
+sAMAccountName: DecleirS
+description: This is Suzanna Decleir's description
+facsimileTelephoneNumber: +1 null 114-7545
+l: Armonk
+ou: null
+postalAddress: null$Armonk
+telephoneNumber: +1 null 575-5853
+title: Supervisor null null
+userPassword: Password1
+uid: DecleirS
+givenName: Suzanna
+mail: DecleirS@ns-mail4.com
+carLicense: 3IUHIM
+departmentNumber: 3413
+employeeType: Contract
+homePhone: +1 null 538-9541
+initials: S. D.
+mobile: +1 null 980-2109
+pager: +1 null 622-4312
+roomNumber: 9503
+secretary: cn=Ealasaid Older,ou=null,dc=NTTI, dc=COM
+manager: cn=Giang Firat,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Georges Moyano,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Georges Moyano
+sn: Moyano
+sAMAccountName: MoyanoG
+description: This is Georges Moyano's description
+facsimileTelephoneNumber: +1 null 277-3176
+l: Orem
+ou: null
+postalAddress: null$Orem
+telephoneNumber: +1 null 488-1568
+title: Supervisor null null
+userPassword: Password1
+uid: MoyanoG
+givenName: Georges
+mail: MoyanoG@ns-mail7.com
+carLicense: TMO4BG
+departmentNumber: 6888
+employeeType: Contract
+homePhone: +1 null 529-8660
+initials: G. M.
+mobile: +1 null 926-1533
+pager: +1 null 225-5872
+roomNumber: 8960
+secretary: cn=Svr English,ou=null,dc=NTTI, dc=COM
+manager: cn=Janos Wyss,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Willamina Cruickshank,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Willamina Cruickshank
+sn: Cruickshank
+sAMAccountName: CruicksW
+description: This is Willamina Cruickshank's description
+facsimileTelephoneNumber: +1 null 164-9323
+l: Sunnyvale
+ou: null
+postalAddress: null$Sunnyvale
+telephoneNumber: +1 null 775-9906
+title: Supervisor null null
+userPassword: Password1
+uid: CruicksW
+givenName: Willamina
+mail: CruicksW@ns-mail5.com
+carLicense: ERKPR9
+departmentNumber: 5796
+employeeType: Contract
+homePhone: +1 null 283-1389
+initials: W. C.
+mobile: +1 null 176-6763
+pager: +1 null 979-1682
+roomNumber: 8532
+secretary: cn=Suzanna Decleir,ou=null,dc=NTTI, dc=COM
+manager: cn=Giang Firat,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Joelynn Beswick,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Joelynn Beswick
+sn: Beswick
+sAMAccountName: BeswickJ
+description: This is Joelynn Beswick's description
+facsimileTelephoneNumber: +1 null 115-1477
+l: Fremont
+ou: null
+postalAddress: null$Fremont
+telephoneNumber: +1 null 613-4218
+title: Supervisor null null
+userPassword: Password1
+uid: BeswickJ
+givenName: Joelynn
+mail: BeswickJ@ns-mail8.com
+carLicense: QUVH30
+departmentNumber: 4983
+employeeType: Contract
+homePhone: +1 null 453-4303
+initials: J. B.
+mobile: +1 null 785-5334
+pager: +1 null 347-6766
+roomNumber: 9941
+secretary: cn=Georges Moyano,ou=null,dc=NTTI, dc=COM
+manager: cn=Giang Firat,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Ext Yach,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Ext Yach
+sn: Yach
+sAMAccountName: YachE
+description: This is Ext Yach's description
+facsimileTelephoneNumber: +1 null 737-9796
+l: Sunnyvale
+ou: null
+postalAddress: null$Sunnyvale
+telephoneNumber: +1 null 790-2471
+title: Supervisor null null
+userPassword: Password1
+uid: YachE
+givenName: Ext
+mail: YachE@ns-mail5.com
+carLicense: JT44XI
+departmentNumber: 4624
+employeeType: Contract
+homePhone: +1 null 690-5416
+initials: E. Y.
+mobile: +1 null 815-4565
+pager: +1 null 300-2996
+roomNumber: 8751
+secretary: cn=Joelynn Beswick,ou=null,dc=NTTI, dc=COM
+manager: cn=Giang Firat,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Ravi Novia,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Ravi Novia
+sn: Novia
+sAMAccountName: NoviaR
+description: This is Ravi Novia's description
+facsimileTelephoneNumber: +1 null 221-3420
+l: Armonk
+ou: null
+postalAddress: null$Armonk
+telephoneNumber: +1 null 448-3448
+title: Supervisor null null
+userPassword: Password1
+uid: NoviaR
+givenName: Ravi
+mail: NoviaR@ns-mail4.com
+carLicense: DJNODJ
+departmentNumber: 3766
+employeeType: Contract
+homePhone: +1 null 343-1941
+initials: R. N.
+mobile: +1 null 582-4308
+pager: +1 null 370-2870
+roomNumber: 8997
+secretary: cn=Ext Yach,ou=null,dc=NTTI, dc=COM
+manager: cn=Giang Firat,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Romano Salam,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Romano Salam
+sn: Salam
+sAMAccountName: SalamR
+description: This is Romano Salam's description
+facsimileTelephoneNumber: +1 null 480-2220
+l: Santa Clara
+ou: null
+postalAddress: null$Santa Clara
+telephoneNumber: +1 null 910-8521
+title: Supervisor null null
+userPassword: Password1
+uid: SalamR
+givenName: Romano
+mail: SalamR@ns-mail9.com
+carLicense: PWGYLV
+departmentNumber: 8552
+employeeType: Contract
+homePhone: +1 null 729-6177
+initials: R. S.
+mobile: +1 null 721-9004
+pager: +1 null 694-6924
+roomNumber: 8077
+secretary: cn=Willamina Cruickshank,ou=null,dc=NTTI, dc=COM
+manager: cn=Giang Firat,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Susannah McLenaghan,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Susannah McLenaghan
+sn: McLenaghan
+sAMAccountName: McLenagS
+description: This is Susannah McLenaghan's description
+facsimileTelephoneNumber: +1 null 155-3873
+l: Fremont
+ou: null
+postalAddress: null$Fremont
+telephoneNumber: +1 null 224-7674
+title: Supervisor null null
+userPassword: Password1
+uid: McLenagS
+givenName: Susannah
+mail: McLenagS@ns-mail7.com
+carLicense: A914BS
+departmentNumber: 3379
+employeeType: Contract
+homePhone: +1 null 775-3814
+initials: S. M.
+mobile: +1 null 616-3693
+pager: +1 null 766-6975
+roomNumber: 8546
+secretary: cn=Joelynn Beswick,ou=null,dc=NTTI, dc=COM
+manager: cn=Ravi Novia,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Elle Dolezal,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Elle Dolezal
+sn: Dolezal
+sAMAccountName: DolezalE
+description: This is Elle Dolezal's description
+facsimileTelephoneNumber: +1 null 395-6969
+l: Armonk
+ou: null
+postalAddress: null$Armonk
+telephoneNumber: +1 null 116-2751
+title: Supervisor null null
+userPassword: Password1
+uid: DolezalE
+givenName: Elle
+mail: DolezalE@ns-mail7.com
+carLicense: HXK8SQ
+departmentNumber: 3011
+employeeType: Contract
+homePhone: +1 null 831-2641
+initials: E. D.
+mobile: +1 null 121-3321
+pager: +1 null 278-1192
+roomNumber: 9061
+secretary: cn=Suzanna Decleir,ou=null,dc=NTTI, dc=COM
+manager: cn=Ravi Novia,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Cassondra Lifshey,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Cassondra Lifshey
+sn: Lifshey
+sAMAccountName: LifsheyC
+description: This is Cassondra Lifshey's description
+facsimileTelephoneNumber: +1 null 767-9703
+l: Cupertino
+ou: null
+postalAddress: null$Cupertino
+telephoneNumber: +1 null 177-1673
+title: Supervisor null null
+userPassword: Password1
+uid: LifsheyC
+givenName: Cassondra
+mail: LifsheyC@ns-mail7.com
+carLicense: HR7UYO
+departmentNumber: 6299
+employeeType: Contract
+homePhone: +1 null 586-2119
+initials: C. L.
+mobile: +1 null 824-7496
+pager: +1 null 469-6630
+roomNumber: 8072
+secretary: cn=Sonni Debnam,ou=null,dc=NTTI, dc=COM
+manager: cn=Giang Firat,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Inderjit McCullen,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Inderjit McCullen
+sn: McCullen
+sAMAccountName: McCulleI
+description: This is Inderjit McCullen's description
+facsimileTelephoneNumber: +1 null 360-7008
+l: Fremont
+ou: null
+postalAddress: null$Fremont
+telephoneNumber: +1 null 559-3339
+title: Supervisor null null
+userPassword: Password1
+uid: McCulleI
+givenName: Inderjit
+mail: McCulleI@ns-mail6.com
+carLicense: CXA49W
+departmentNumber: 7323
+employeeType: Contract
+homePhone: +1 null 764-5506
+initials: I. M.
+mobile: +1 null 241-5312
+pager: +1 null 678-3787
+roomNumber: 9407
+manager: cn=Giang Firat,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Kandy Greszczuk,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Kandy Greszczuk
+sn: Greszczuk
+sAMAccountName: GreszczK
+description: This is Kandy Greszczuk's description
+facsimileTelephoneNumber: +1 null 400-6386
+l: Orem
+ou: null
+postalAddress: null$Orem
+telephoneNumber: +1 null 882-4769
+title: Supervisor null null
+userPassword: Password1
+uid: GreszczK
+givenName: Kandy
+mail: GreszczK@ns-mail9.com
+carLicense: DCQGUR
+departmentNumber: 3004
+employeeType: Contract
+homePhone: +1 null 421-2203
+initials: K. G.
+mobile: +1 null 923-7038
+pager: +1 null 822-6441
+roomNumber: 9467
+secretary: cn=Joelynn Beswick,ou=null,dc=NTTI, dc=COM
+manager: cn=Susannah McLenaghan,ou=null,dc=NTTI, dc=COM 
+
+dn: cn=Rajesh de Wilton,ou=null,dc=NTTI, dc=COM
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Rajesh de Wilton
+sn: de Wilton
+sAMAccountName: de WiltR
+description: This is Rajesh de Wilton's description
+facsimileTelephoneNumber: +1 null 213-4383
+l: Redmond
+ou: null
+postalAddress: null$Redmond
+telephoneNumber: +1 null 685-7611
+title: Supervisor null null
+userPassword: Password1
+uid: de WiltR
+givenName: Rajesh
+mail: de WiltR@ns-mail4.com
+carLicense: V33BAD
+departmentNumber: 6885
+employeeType: Contract
+homePhone: +1 null 583-7360
+initials: R. d.
+mobile: +1 null 278-5821
+pager: +1 null 371-3212
+roomNumber: 8773
+manager: cn=Willyt Soard,ou=null,dc=NTTI, dc=COM
+secretary: cn=Joelynn Beswick,ou=null,dc=NTTI, dc=COM 
