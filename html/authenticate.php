@@ -7,7 +7,7 @@ function authenticate($user, $password) {
 	$ldap_host = "ldap://openldap:1389";
  
 	// active directory DN (base location of ldap search)
-	$ldap_dn = "OU=NTTI,DC=NTTAPAC,DC=COM";
+	$ldap_dn = "ou=NTTI,DC=NTTAPAC,DC=COM";
 	// $ldap_dn = "dc=example,dc=org";
  
 	// active directory user group name
@@ -28,7 +28,7 @@ function authenticate($user, $password) {
  
 	// verify user and password
 	// if($bind = @ldap_bind($ldap, $user.$ldap_usr_dom, $password)) {
-		if($bind = @ldap_bind($ldap, "cn=$user,ou=users,$ldap_dn", $password)) {
+		if($bind = @ldap_bind($ldap, "cn=$user,$ldap_dn", $password)) {
 		// valid
 		// check presence in groups
 		// $filter = "(sAMAccountName=".$user.")";

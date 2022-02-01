@@ -10,13 +10,10 @@ services:
     ports:
       - "8080:80"
   mysql-server:
-    image: mysql:5.7.36
+    build:
+      dockerfile: mysql.Dockerfile
+      context: .
     restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: secret
-      MYSQL_DATABASE: noconsole
-      MYSQL_USER: nocuser
-      MYSQL_PASSWORD: n0cus3r
     volumes:
       - mysql-data:/var/lib/mysql
     storage_opt:

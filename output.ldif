@@ -1,368 +1,48 @@
-version: 1
+## DEFINE DIT ROOT/BASE/SUFFIX ####
+## uses RFC 2377 format
+## replace example and com as necessary below
+## or for experimentation leave as is
 
-dn: ou=Accounting,dc=NTTI, dc=COM
-changetype: add
-ou: Accounting
-objectClass: top
-objectClass: organizationalUnit
+## dcObject is an AUXILLIARY objectclass and MUST
+## have a STRUCTURAL objectclass (organization in this case)
+# this is an ENTRY sequence and is preceded by a BLANK line
 
-dn: ou=Product Development,dc=NTTI, dc=COM
-changetype: add
-ou: Product Development
-objectClass: top
-objectClass: organizationalUnit
+dn: dc=example,dc=com
+dc: example
+description: My wonderful company as much text as you want to place 
+ in this line up to 32K continuation data for the line above must 
+ have <CR> or <CR><LF> i.e. ENTER works 
+ on both Windows and *nix system - new line MUST begin with ONE SPACE
+objectClass: dcObject
+objectClass: organization
+o: Example, Inc.
 
-dn: ou=Product Testing,dc=NTTI, dc=COM
-changetype: add
-ou: Product Testing
-objectClass: top
-objectClass: organizationalUnit
+## FIRST Level hierarchy - people 
+## uses mixed upper and lower case for objectclass
+# this is an ENTRY sequence and is preceded by a BLANK line
 
-dn: ou=Human Resources,dc=NTTI, dc=COM
-changetype: add
+dn: ou=people, dc=example,dc=com
+ou: people
+description: All people in organisation
+objectclass: organizationalunit
+
+## SECOND Level hierarchy
+## ADD a single entry under FIRST (people) level
+# this is an ENTRY sequence and is preceded by a BLANK line
+# the ou: Human Resources is the department name
+
+dn: cn=Robert Smith,ou=people,dc=example,dc=com
+objectclass: inetOrgPerson
+cn: Robert Smith
+cn: Robert J Smith
+cn: bob  smith
+sn: smith
+uid: rjsmith
+userpassword: rJsmitH
+carlicense: HISCAR 123
+homephone: 555-111-2222
+mail: r.smith@example.com
+mail: rsmith@example.com
+mail: bob.smith@example.com
+description: swell guy
 ou: Human Resources
-objectClass: top
-objectClass: organizationalUnit
-
-dn: ou=Payroll,dc=NTTI, dc=COM
-changetype: add
-ou: Payroll
-objectClass: top
-objectClass: organizationalUnit
-
-dn: ou=Janitorial,dc=NTTI, dc=COM
-changetype: add
-ou: Janitorial
-objectClass: top
-objectClass: organizationalUnit
-
-dn: ou=Management,dc=NTTI, dc=COM
-changetype: add
-ou: Management
-objectClass: top
-objectClass: organizationalUnit
-
-dn: ou=Administrative,dc=NTTI, dc=COM
-changetype: add
-ou: Administrative
-objectClass: top
-objectClass: organizationalUnit
-
-dn: ou=Peons,dc=NTTI, dc=COM
-changetype: add
-ou: Peons
-objectClass: top
-objectClass: organizationalUnit
-
-dn: ou=Planning,dc=NTTI, dc=COM
-changetype: add
-ou: Planning
-objectClass: top
-objectClass: organizationalUnit
-
-dn: cn=Jacky Nizman,ou=Payroll,dc=NTTI, dc=COM
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-cn: Jacky Nizman
-sn: Nizman
-sAMAccountName: NizmanJ
-description: This is Jacky Nizman's description
-facsimileTelephoneNumber: +1 213 838-1900
-l: Menlo Park
-ou: Payroll
-postalAddress: Payroll$Menlo Park
-telephoneNumber: +1 213 214-6786
-title: Junior Payroll Czar
-userPassword: Password1
-uid: NizmanJ
-givenName: Jacky
-mail: NizmanJ@ns-mail9.com
-carLicense: DTNRN4
-departmentNumber: 1191
-employeeType: Normal
-homePhone: +1 213 452-9301
-initials: J. N.
-mobile: +1 213 680-6789
-pager: +1 213 614-7069
-roomNumber: 9050
-secretary: null 
-
-dn: cn=Dahlia Hilmi,ou=Payroll,dc=NTTI, dc=COM
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-cn: Dahlia Hilmi
-sn: Hilmi
-sAMAccountName: HilmiD
-description: This is Dahlia Hilmi's description
-facsimileTelephoneNumber: +1 415 376-4488
-l: Palo Alto
-ou: Payroll
-postalAddress: Payroll$Palo Alto
-telephoneNumber: +1 415 491-4371
-title: Supreme Payroll Warrior
-userPassword: Password1
-uid: HilmiD
-givenName: Dahlia
-mail: HilmiD@ns-mail4.com
-carLicense: SNIRX4
-departmentNumber: 3367
-employeeType: Employee
-homePhone: +1 415 354-9801
-initials: D. H.
-mobile: +1 415 496-3913
-pager: +1 415 947-6858
-roomNumber: 8252 
-
-dn: cn=Diandra Walas,ou=Peons,dc=NTTI, dc=COM
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-cn: Diandra Walas
-sn: Walas
-sAMAccountName: WalasD
-description: This is Diandra Walas's description
-facsimileTelephoneNumber: +1 510 733-6516
-l: Alameda
-ou: Peons
-postalAddress: Peons$Alameda
-telephoneNumber: +1 510 278-7196
-title: Supreme Peons Manager
-userPassword: Password1
-uid: WalasD
-givenName: Diandra
-mail: WalasD@ns-mail3.com
-carLicense: XNVMO2
-departmentNumber: 4477
-employeeType: Normal
-homePhone: +1 510 737-2213
-initials: D. W.
-mobile: +1 510 765-1818
-pager: +1 510 786-6829
-roomNumber: 8974
-manager: cn=Jacky Nizman,ou=Payroll,dc=NTTI, dc=COM
-secretary: cn=Dahlia Hilmi,ou=Payroll,dc=NTTI, dc=COM 
-
-dn: cn=Lionel Hardman,ou=Product Testing,dc=NTTI, dc=COM
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-cn: Lionel Hardman
-sn: Hardman
-sAMAccountName: HardmanL
-description: This is Lionel Hardman's description
-facsimileTelephoneNumber: +1 818 610-4035
-l: Santa Clara
-ou: Product Testing
-postalAddress: Product Testing$Santa Clara
-telephoneNumber: +1 818 252-6302
-title: Chief Product Testing Manager
-userPassword: Password1
-uid: HardmanL
-givenName: Lionel
-mail: HardmanL@ns-mail3.com
-carLicense: JYYWIG
-departmentNumber: 3585
-employeeType: Contract
-homePhone: +1 818 280-2568
-initials: L. H.
-mobile: +1 818 120-6942
-pager: +1 818 177-3594
-roomNumber: 9198
-manager: cn=Jacky Nizman,ou=Payroll,dc=NTTI, dc=COM
-secretary: cn=Dahlia Hilmi,ou=Payroll,dc=NTTI, dc=COM 
-
-dn: cn=Jerzy Plante,ou=Administrative,dc=NTTI, dc=COM
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-cn: Jerzy Plante
-sn: Plante
-sAMAccountName: PlanteJ
-description: This is Jerzy Plante's description
-facsimileTelephoneNumber: +1 510 216-3936
-l: Sunnyvale
-ou: Administrative
-postalAddress: Administrative$Sunnyvale
-telephoneNumber: +1 510 242-1680
-title: Master Administrative Fellow
-userPassword: Password1
-uid: PlanteJ
-givenName: Jerzy
-mail: PlanteJ@ns-mail9.com
-carLicense: 7QQEQB
-departmentNumber: 5693
-employeeType: Employee
-homePhone: +1 510 890-4489
-initials: J. P.
-mobile: +1 510 844-3265
-pager: +1 510 635-4536
-roomNumber: 9553
-manager: cn=Jacky Nizman,ou=Payroll,dc=NTTI, dc=COM
-secretary: cn=Dahlia Hilmi,ou=Payroll,dc=NTTI, dc=COM 
-
-dn: cn=Reese Keuning,ou=Payroll,dc=NTTI, dc=COM
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-cn: Reese Keuning
-sn: Keuning
-sAMAccountName: KeuningR
-description: This is Reese Keuning's description
-facsimileTelephoneNumber: +1 408 372-1132
-l: Cambridge
-ou: Payroll
-postalAddress: Payroll$Cambridge
-telephoneNumber: +1 408 628-4590
-title: Chief Payroll Engineer
-userPassword: Password1
-uid: KeuningR
-givenName: Reese
-mail: KeuningR@ns-mail4.com
-carLicense: 3XPWRT
-departmentNumber: 1662
-employeeType: Normal
-homePhone: +1 408 492-1136
-initials: R. K.
-mobile: +1 408 810-6127
-pager: +1 408 704-9285
-roomNumber: 9662
-manager: cn=Jacky Nizman,ou=Payroll,dc=NTTI, dc=COM
-secretary: cn=Dahlia Hilmi,ou=Payroll,dc=NTTI, dc=COM 
-
-dn: cn=Pic Odgers,ou=Human Resources,dc=NTTI, dc=COM
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-cn: Pic Odgers
-sn: Odgers
-sAMAccountName: OdgersP
-description: This is Pic Odgers's description
-facsimileTelephoneNumber: +1 213 538-7260
-l: San Mateo
-ou: Human Resources
-postalAddress: Human Resources$San Mateo
-telephoneNumber: +1 213 342-5904
-title: Supreme Human Resources Warrior
-userPassword: Password1
-uid: OdgersP
-givenName: Pic
-mail: OdgersP@ns-mail9.com
-carLicense: 5U8SHL
-departmentNumber: 1233
-employeeType: Contract
-homePhone: +1 213 978-1415
-initials: P. O.
-mobile: +1 213 586-6857
-pager: +1 213 688-8735
-roomNumber: 8876
-manager: cn=Jacky Nizman,ou=Payroll,dc=NTTI, dc=COM
-secretary: cn=Dahlia Hilmi,ou=Payroll,dc=NTTI, dc=COM 
-
-dn: cn=Sibella Simhan,ou=Product Development,dc=NTTI, dc=COM
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-cn: Sibella Simhan
-sn: Simhan
-sAMAccountName: SimhanS
-description: This is Sibella Simhan's description
-facsimileTelephoneNumber: +1 510 537-5976
-l: San Jose
-ou: Product Development
-postalAddress: Product Development$San Jose
-telephoneNumber: +1 510 845-3178
-title: Chief Product Development Stooge
-userPassword: Password1
-uid: SimhanS
-givenName: Sibella
-mail: SimhanS@ns-mail5.com
-carLicense: SCTROS
-departmentNumber: 2870
-employeeType: Contract
-homePhone: +1 510 699-4936
-initials: S. S.
-mobile: +1 510 208-9422
-pager: +1 510 601-7897
-roomNumber: 9618
-manager: cn=Jacky Nizman,ou=Payroll,dc=NTTI, dc=COM
-secretary: cn=Dahlia Hilmi,ou=Payroll,dc=NTTI, dc=COM 
-
-dn: cn=Leaton O'Toole,ou=Janitorial,dc=NTTI, dc=COM
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-cn: Leaton O'Toole
-sn: O'Toole
-sAMAccountName: O'TooleL
-description: This is Leaton O'Toole's description
-facsimileTelephoneNumber: +1 206 843-4742
-l: Redmond
-ou: Janitorial
-postalAddress: Janitorial$Redmond
-telephoneNumber: +1 206 481-6100
-title: Supreme Janitorial Manager
-userPassword: Password1
-uid: O'TooleL
-givenName: Leaton
-mail: O'TooleL@ns-mail2.com
-carLicense: 7KA5NN
-departmentNumber: 2037
-employeeType: Employee
-homePhone: +1 206 336-8622
-initials: L. O.
-mobile: +1 206 897-4744
-pager: +1 206 253-1526
-roomNumber: 9076
-manager: cn=Jacky Nizman,ou=Payroll,dc=NTTI, dc=COM
-secretary: cn=Dahlia Hilmi,ou=Payroll,dc=NTTI, dc=COM 
-
-dn: cn=Aurilia Tres-Support,ou=Product Development,dc=NTTI, dc=COM
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-cn: Aurilia Tres-Support
-sn: Tres-Support
-sAMAccountName: Tres-SuA
-description: This is Aurilia Tres-Support's description
-facsimileTelephoneNumber: +1 213 370-2374
-l: Cambridge
-ou: Product Development
-postalAddress: Product Development$Cambridge
-telephoneNumber: +1 213 203-3720
-title: Junior Product Development Madonna
-userPassword: Password1
-uid: Tres-SuA
-givenName: Aurilia
-mail: Tres-SuA@ns-mail7.com
-carLicense: 1F0PHW
-departmentNumber: 5830
-employeeType: Contract
-homePhone: +1 213 706-9399
-initials: A. T.
-mobile: +1 213 422-9688
-pager: +1 213 489-2618
-roomNumber: 9865
-manager: cn=Jacky Nizman,ou=Payroll,dc=NTTI, dc=COM
-secretary: cn=Dahlia Hilmi,ou=Payroll,dc=NTTI, dc=COM 
