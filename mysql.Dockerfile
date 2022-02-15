@@ -4,6 +4,6 @@ ENV MYSQL_DATABASE=noconsole
 ENV MYSQL_USER=nocuser
 ENV MYSQL_PASSWORD=n0cus3r
 COPY ./noconsole.sql ./noconsole.sql
-RUN mysql -u ${MYSQL_USER} -p${MYSQL_PASSWORD}
-RUN USE noconsole;
-RUN \. noconsole.sql
+# RUN mysql -u ${MYSQL_USER} -p${MYSQL_PASSWORD}
+# RUN USE noconsole;
+# RUN \. noconsole.sql
