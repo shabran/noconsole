@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="./src/css/layout.css">
 
     <script>
-    sessionStorage.setItem('username', '<?php echo $_SESSION['username'];?>');  
+    sessionStorage.setItem('username', '<?php echo $_SESSION['user'];?>');  
     sessionStorage.setItem('email', '<?php echo $_SESSION['email'];?>');
     sessionStorage.setItem('access', '<?php echo $_SESSION['access'];?>');
     </script>

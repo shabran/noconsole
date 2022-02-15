@@ -77,7 +77,7 @@ function authenticate($user, $password) {
 			// establish session variables
 			$_SESSION['user'] = $user;
 			$_SESSION['access'] = $access;
-			//$_SESSION['username'] = $username; // new variable added to hold CN
+			$_SESSION['username'] = $user; // new variable added to hold CN
 			// $_SESSION['email'] = $userMail; // new variable added to hold CN
 			return true;
 		} else {

@@ -8,7 +8,7 @@ if(!isset($_SESSION['user'])) { // turn off when deploy inhouse
 	die();
 }
 
-// $loginUser = $_SESSION['username']; // turn off when deploy inhouse
+$loginUser = $_SESSION['user']; // turn off when deploy inhouse
 // $loginEmail = $_SESSION['email']; // turn off when deploy inhouse
 $loginAccess = $_SESSION['access']; // turn off when deploy inhouse
 
