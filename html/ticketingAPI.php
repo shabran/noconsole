@@ -1,7 +1,7 @@
 <?php
 include './session.php';
 // Database details
-$db_server   = 'localhost';
+$db_server   = 'mysql-server';
 // $db_server   = 'logbook.local'; // for local development
 
 $db_username = 'nocuser';
