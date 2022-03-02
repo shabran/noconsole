@@ -1,4 +1,5 @@
 FROM php:7.4.3-apache
+ENV TZ=Asia/Jakarta
 COPY ./php.ini /usr/local/etc/php/conf.d
 COPY ./html/ /var/www/html/
 WORKDIR /var/www/html/

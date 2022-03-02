@@ -2,6 +2,7 @@ FROM bitnami/openldap:latest
 # COPY ./output.ldif /ldifs/output.ldif
 # ENV LDAP_SKIP_DEFAULT_TREE=no
 # ENV LDAP_CUSTOM_LDIF_DIR=/ldifs/output.ldif
+ENV TZ=Asia/Jakarta
 ENV LDAP_ROOT=dc=NTTAPAC,dc=COM
 ENV LDAP_USER_DC=NTTI
 ENV LDAP_GROUP=NOC
