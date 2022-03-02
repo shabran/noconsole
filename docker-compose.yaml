@@ -23,6 +23,7 @@ services:
     image: phpmyadmin/phpmyadmin:5.0.1
     restart: always
     environment:
+      TZ: Asia/Jakarta
       PMA_HOST: mysql-server
       PMA_USER: root
       PMA_PASSWORD: secret
